@@ -1,0 +1,323 @@
+.groupingPage {
+    .main-title {
+        .br {
+            &::after {
+                position: relative;
+                display: block;
+                justify-content: center;
+                content: " ";
+                background-color: $lightGray;
+                width: 40%;
+                height: 2px;
+                margin: 0 auto;
+                top: 15px;
+                z-index: -1;
+            }
+        }
+
+        >span {
+            position: relative;
+            left: 2px;
+            color: $mainWhite;
+            background-color: $mainWhite;
+        }
+
+        .main-title-group {
+            text-decoration: none !important;
+            color: $mainWhite;
+            background-color: $mainPrimary;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .main-title-name {
+            @include textStyle($mainBlack, 3rem, bold, 3rem);
+
+            /*             span {
+                @include textStyle($mainBlack, 2.9rem, normal, 2rem)
+            } */
+
+        }
+    }
+
+    .list-books {
+        .search-box {
+            background: $mainWhite;
+            margin: 0 auto;
+            direction: rtl;
+            box-shadow: 0px 2px 4px rgba($color: $mainBlack, $alpha: 0.1);
+            transition: all .2s ease-in-out;
+            width: 100%;
+
+            &:hover {
+                box-shadow: 0px 0px 9px rgba($color: $mainBlack, $alpha: 0.2);
+            }
+
+            .search-txt {
+                padding: 10px;
+                font-size: .8rem;
+
+                &::placeholder {
+                    color: $mainPrimary;
+                }
+
+                border: none;
+                background: none;
+                outline: none;
+                text-align: start;
+            }
+
+            .search-btn {
+                padding: 10px 0;
+
+                text-decoration: none !important;
+                color: $mainWhite;
+                background-color: $mainPrimary;
+                transition: all .3s linear;
+
+                &:hover {
+                    background-color: $mainBlack;
+                }
+            }
+        }
+
+        .sidebar-list-books {
+            margin: 10px auto;
+            border-radius: 15px;
+            box-shadow: 0px 0px 22px rgb(0 0 0 / 18%);
+            direction: rtl;
+            padding: 10px;
+            width: 100%;
+
+
+
+            ul {
+                width: 100%;
+                // padding: 20px;
+                // border: 1px solid $lightGray;
+                list-style: none;
+                margin: 0px;
+                box-shadow: -7px 0px 10px rgba(255, 255, 255, 5%);
+                
+                .title-grouping {
+                    font-size: 1.2rem;
+                    border-bottom: 1px solid $lightGray;
+
+                }
+
+                li {
+                    padding: 5px 0px;
+                    position: relative;
+
+                    &:hover {
+                        box-shadow: 0px 0px 22px rgb(0 0 0 / 8%);
+                    }
+
+                    &:hover a {
+                        color: $mainPrimary;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            background: $mainPrimary;
+                            width: 5px;
+                            height: 24px;
+                            top: 6px;
+                            right: -12px;
+                        }
+                    }
+
+
+
+                }
+
+                a {
+                    text-decoration: none;
+                    transition: all .2s linear;
+                    color: $textColor;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background: $mainPrimary;
+                        width: 0px;
+                        height: 24px;
+                        top: 6px;
+                        right: -12px;
+                        transition: all .2s linear;
+                    }
+
+                    &:hover {
+                        color: $mainPrimary;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            background: $mainPrimary;
+                            width: 5px;
+                            height: 24px;
+                            top: 6px;
+                            right: -12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+.books-in-grouping{
+    direction: rtl;
+}
+    .swiper-slide {
+        direction: rtl;
+        border-radius: 20px;
+        text-align: center;
+        // font-size: 10px;
+        background: #fff;
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // width: 100%;
+        // height: 100%;
+        box-shadow: 0px 3px 27px rgba($color: #000000, $alpha: .1);
+        overflow: hidden;
+
+        &:hover {
+            box-shadow: 0px 3px 27px rgba($color: #000000, $alpha: .2);
+
+            &:hover {
+                img {
+                    transform: scale(.4);
+                    transform-origin: top;
+                    // bottom: 100px;
+                    // left: 40%;
+                    top: 10px;
+
+                }
+
+                .extra-opt {
+                    margin: 55% 0%;
+                    opacity: 1;
+                }
+
+                .book-name {
+                    color: $mainPrimary;
+                }
+            }
+
+
+        }
+
+        .book-elm {
+
+            >div {
+                margin-bottom: -24px;
+            }
+
+            .extra-opt {
+                text-align: start;
+                position: absolute;
+                border-radius: 100px;
+                padding: 2px;
+                // background-color: $mainPrimary;
+                opacity: 0;
+                margin: 55% 82%;
+                // overflow-x: hidden;
+                transition: all .5s ease-in-out;
+
+                .bookpublishing {
+                    transition: all .21s ease-in-out;
+                }
+
+                .bookpage {
+                    transition: all .22s ease-in-out;
+
+                }
+
+                .bookcategory {
+                    transition: all .23s ease-in-out;
+
+                }
+
+                .bookprice {
+                    transition: all .24s ease-in-out;
+                }
+
+                .ratingbox {
+                    transition: all .25s ease-in-out;
+
+                    i {
+                        color: #ffbb00;
+                    }
+                }
+
+                strong {
+                    font-size: 12px;
+                    font-weight: 0.3rem;
+                    color: $textColor;
+                    padding: 7px;
+                    transition: all .3s ease-in-out;
+                    white-space: nowrap;
+
+                    // &:hover {
+                    //     background-color: $mainWhite;
+                    //     color: $mainPrimary;
+                    // }
+
+                }
+
+            }
+
+            img {
+                transition: all .3s linear;
+                position: relative;
+                transform: scale(1);
+                padding-top: 15px;
+                display: block;
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 15px;
+                box-shadow: 0px 7px 15px rgba($color: #000000, $alpha: .1);
+            }
+
+            .book-name {
+                color: $textColor;
+            }
+
+
+
+            .buy-btn {
+                /*      text-decoration: none !important;
+            background-color: $mainPrimary;
+            @include textStyle($mainWhite, 0.7rem ,1.1rem ,2.5rem);
+            padding: 10px;
+            transition: all .3s linear;
+    
+            
+    
+            &:hover {
+                background-color: $mainBlack;
+            } */
+
+
+                text-decoration: none !important;
+                color: $mainWhite;
+                background-color: $mainPrimary;
+                padding: 10px 30px;
+                transition: all .3s linear;
+                font-size: .8rem;
+                // line-height: 2.5rem;
+                // display: inline-block;
+                position: relative;
+                top: -45px;
+
+                &:hover {
+                    background-color: $mainBlack;
+                }
+
+            }
+        }
+    }
+
+}

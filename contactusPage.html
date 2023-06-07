@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/styles/css/bootstrap.rtl.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/styles/css/main.css">
+    <!-- awiper -->
+    <link rel="stylesheet" href="./assets/styles/css/swiper-bundle.min.css" />
+    <!-- aos animation -->
+    <link href="./assets/aos-master/dist/aos.css" rel="stylesheet">
+    <!-- wow animation -->
+    <link rel="stylesheet" href="./assets/matthieua-WOW-07a2b50/css/site.css">
+    <link rel="stylesheet" href="./assets/animate-css-animate.css-e8c4fab/animate.min.css">
+    <!-- fontello for icon -->
+    <link rel="stylesheet" href="./assets/fontello-7b6b86bb/css/fontello.css">
+    <title>فروشگاه کتاب</title>
+</head>
+
+
+<body>
+    <div class="container-fluid book-page m-0 p-0">
+        <div class="m-0 p-0">
+            <!-- header section -->
+            <div class="header me-0 me-lg-4 ms-0">
+                <!--  navbar -->
+                <div class="lgNavbar row">
+                    <div class="col-3 py-5 d-none d-lg-block">
+                        <div class="d-flex flex-row gap-4 justify-content-center  align-items-center">
+                            <a class="login-btn p-3 pe-4 rounded-pill text-center fw-bold" href="./login.html"
+                                type="button" class="btn btn-primary">
+                                ورود / ثبت نام
+                                <i class="icon-user"></i>
+                            </a>                         
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-12 navbarbody bg-white px-0 px-sm-3">
+                        <nav class="navbar navbar-expand-lg px-sm-3 py-0">
+                            <div class="container-fluid px-2 px-sm-3">
+                                <div class="navbarBtns">
+                                    <button class="navbar-toggler menu-btn" type="button" data-bs-toggle-lg="collapse"
+                                        data-bs-target-lg="#navbarSupportedContent"
+                                        aria-controls-lg="navbarSupportedContent" aria-expanded="false"
+                                        aria-label="Toggle navigation" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                        <span class="icon-menu"></span>
+                                    </button>
+                                    <button class="products-btn navbar-toggler" type="button">
+                                        <a href="./login.html">
+                                            <span class="icon-user"></span>
+                                        </a>
+                                    </button>
+                                </div>
+                                <div class="d-flex flex-row justify-content-around offcanvas offcanvas-end"
+                                    tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-body" id="navbarNavAltMarkup">
+
+                                        <button type="button" class="btn-close text-reset d-lg-none"
+                                            data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                                        <div class="navbar-nav fw-bold">
+                                            <div class="nav-item order-5 order-md-0 active">
+                                                <a class="nav-link " href="#footer"> تماس با ما</a>
+                                            </div>
+                                            <div class="nav-item pages dropdown order-4 order-md-1">
+                                                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="icon-down-open"></i>
+                                                    صفحات
+                                                </a>
+                                                <ul class="dropdown-menu py-3 px-0 sub-menu-pages-1"
+                                                    aria-labelledby="dropdownMenuButton">
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">وبلاگ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./aboutusPage.html">درباره ما</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">سوالات متداول</a>
+                                                    </li>
+                                                    <li class="open-sub-menu-2">
+                                                        <a class="col-9 dropdown-item" href="#">منوی کشویی</a>
+                                                        <i class="icon-left-open col-1"></i>
+
+                                                        <ul
+                                                            class="py-3 px-0 sub-menu-pages-2 dropdown-menu dropdown-submenu">
+                                                            <li>
+                                                                <a class="dropdown-item" href="#">زیر منو 1</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#">زیر منو 2</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#">زیر منو 3</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="nav-item grouping dropdown order-3 order-md-2">
+                                                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="icon-down-open"></i>
+                                                    دسته بندی </a>
+                                                <!-- hover grouping section -->
+                                                <div class="sub-menu-grouping dropdown-menu"
+                                                    aria-labelledby="dropdownMenuButton">
+                                                    <div class="row">
+                                                        <ul class="col-6 py-3">
+                                                            <li>
+                                                                <a class="fw-bold title-grouping text-white"
+                                                                    href="#">مجموعه جذاب</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">ماجراجویی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="./groupingPage.html">رمان</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">کمدی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">فانتزی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">تاریخی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">جنایی</a>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="col-6 py-3">
+                                                            <li>
+                                                                <a class="fw-bold title-grouping text-white"
+                                                                    href="#">مجموعه رایگان</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">ستاره شناسی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">جئوگرافی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">ورزشی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">تاریخی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">ادبیات ئاستانی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">اقتصاد</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">کلاسیک</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">بیوگرافی</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- end hover grouping section -->
+                                            </div>
+                                            <div class="nav-item collection dropdown order-2 order-md-3">
+                                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="icon-down-open"></i>
+                                                    مجموعه </a>
+
+                                                <!-- hover collection section -->
+                                                <div class="sub-menu-collection dropdown-menu"
+                                                    aria-labelledby="dropdownMenuButton">
+
+                                                    <div class="row">
+                                                        <ul class="col-6 py-3">
+                                                            <li>
+                                                                <a class="" href="#">ماجراجویی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="./groupingPage.html">رمان</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">پرفروشترین ها</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">بیوگرافی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">کارگاه رمز و راز</a>
+                                                            </li>
+
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                                <!-- end hover collection section -->
+                                            </div>
+                                            <div class="nav-item order-1 order-md-4">
+                                                <a class="nav-link" href="#"> کتاب ها </a>
+                                            </div>
+                                            <div class="nav-item order-0 order-md-5">
+                                                <a class="nav-link" href="./index.html"> صفحه اصلی</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--         logo -->
+                                <a class="navbar-brand" href="#">
+                                    <img src="./assets/img/logo-book-shop.png" class="d-inline-block" alt="logo">
+                                </a>
+                                <!--        logo -->
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- hover collection section -->
+
+                    <!-- end hover collection section -->
+
+                </div>
+                <!--  end navbar -->
+                <!-- header content section-->
+                <div class="d-flex flex-row w-100 header-content text-dark justify-content-end">
+                    <div class=" p-4">
+                        <nav dir="rtl" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="./index.html">صفحه اصلی </a></li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    تماس با ما
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <!-- end header content section-->
+            </div>
+            <!-- end header section -->
+
+            <!-- contact us section -->
+            <div class="container-fluid container-md contactus">
+                <div class="d-flex flex-row flex-wrap contact-tools justify-content-center gap-5 my-5">
+                    <div class="col-lg-3 col-6 contact-tool">
+                        <a href="#" class="d-flex flex-column text-center p-4 p-lg-5 ">
+                            <i class="icon-phone fs-2"></i>
+                            <b>تلفن</b>
+                            <span>09901171608</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-6 contact-tool">
+                        <a href="#" class="d-flex flex-column text-center p-4 p-lg-5">
+                            <i class="icon-headphones fs-2"></i>
+                            <b>پشتیبانی</b>
+                            <span>info@ekstrabook.ir</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-6 contact-tool">
+                        <a href="#" class="d-flex flex-column text-center p-4 p-lg-5">
+                            <i class="icon-mail fs-2"></i>
+                            <b>ایمیل</b>
+                            <span>info@ekstrabook.ir</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row pt-5 mb-5 contactUs-content" >
+                    <div class="col-12 col-md-4 map">
+
+                        <img src="./assets/img/mapimg.jpg" class="img-fluid w-100 h-100">
+
+                        <!-- <div class="gm-err-content">
+                            <div class="gm-err-icon"><img
+                                    src="https://maps.gstatic.com/mapfiles/api-3/images/icon_error.png" alt=""
+                                    draggable="false" style="user-select: none;"></div>
+                            <div class="gm-err-title">Oops! Something went wrong.</div>
+                            <div class="gm-err-message">This page didn't load Google Maps correctly. See the JavaScript
+                                console for technical details.</div>
+                        </div> -->
+
+                    </div>
+                    <!-- contact us form -->
+                    <div class="cantactus-form col-12 col-md-8 px-4">
+                        <h3 class="title py-4">با ما در تماس باشید</h3>
+                        <div class="form-contact">
+                            <form>
+                                <div class="form d-flex flex-row flex-wrap gap-5 justify-content-start">
+                                    <div class="col-5">
+                                        <label for="exampleFormControlInput1" class="label text-white py-1">*نام
+                                            شما</label>
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                    <div class="col-5">
+                                        <label for="exampleFormControlInput1" class="label text-white py-1">*پست
+                                            الکترونیکی</label>
+                                        <input type="email" class="form-control" placeholder="">
+                                    </div>
+                                    <div class="col-5">
+                                        <label for="exampleFormControlInput1"
+                                            class="label text-white py-1">موضوع</label>
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                    <div class="col-5">
+                                        <label for="exampleFormControlInput1"
+                                            class="label text-white py-1">دپارتمان</label>
+                                        <select class="form-select" required="" name="subject">
+                                            <option selected="" disabled="" value="">انتخاب موضوع</option>
+                                            <option value="1">پشتیبانی</option>
+                                            <option value="2">فروش</option>
+                                            <option value="3">مالی</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-11">
+                                        <label for="exampleFormControlInput1" class="label text-white py-1">سوال
+                                            شما</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="4"></textarea>
+                                    </div>
+                                </div>
+                                <button name="submit" type="submit" class="form-control-btn my-5">ثبت و ارسال</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- end contact us form -->
+
+                </div>
+
+            </div>
+
+            <!-- end contact us section -->
+
+            <!-- go top btn -->
+            <a href="#" class="go-top-btn" type="button">
+                <span class=" icon-up-open"></span>
+            </a>
+            <!-- end go top btn -->
+    <!-- cart btn -->
+    <div class="fixed-bottom">
+        <a href="./cartPage.html" class="shopping-bag-fixed position-relative">
+            <i class="icon-basket-1 shopping-bag-icon"></i>
+            <span class="position-absolute start-0 translate-middle badge rounded-pill bg-secondary">0</span>
+        </a>
+    </div>
+    <!-- end cart btn -->
+            <!-- footer -->
+            <footer class="footer-sec pt-3 pb-0" id="footer">
+                <div class="main d-flex flex-row flex-wrap">
+                    <div class="link col-12 col-md-4 col-lg-3">
+                        <div class="footer-header">
+                            <h5>لینک های مفید</h5>
+                        </div>
+                        <ul class="link-des">
+                            <li>
+                                <a href="#" class="footer-links">خانه</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-links"> کتاب ها</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-links">دسته بندی</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-links">مجموعه ها</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-links">تماس باما</a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="booklist col-12 col-md-4 col-lg-3 ">
+                        <div class="footer-header">
+                            <h5>دسته بندی کتاب ها </h5>
+                        </div>
+                        <div class="booklist-des ps-4">
+                            <div class="sidebar-list-books">
+                                <div class="row">
+                                    <ul class="">
+                                        <li>
+                                            <a class="" href="#">ماجراجویی</a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="./groupingPage.html">رمان</a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="#">کمدی</a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="#">فانتزی</a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="#">تاریخی</a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="#">کمدی</a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="#">فانتزی</a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="#">تاریخی</a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="#">جنایی</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newsletter col-12 col-md-4 col-lg-3">
+                        <div class="footer-header">
+                            <h5>عضویت در خبرنامه</h5>
+                        </div>
+                        <div class="newsletter-des">
+                            <!-- subs newsletter-->
+                            <div class="sendemail-box row justify-content-between rounded-pill">
+                                <input class="sendemail-txt col-9" type="email" placeholder="ایمیل خود را وارد کنید">
+                                <a class=" sendemail-btn rounded-pill col-3 text-center" href="#">
+                                    ارسال
+                                </a>
+                            </div>
+                            <!-- end subs newsletter-->
+
+                            <a href="#">extrabook@gmail.com</a>
+
+                            <p class="num">+91-9976893859</p>
+                            <div class="icons d-flex flex-wrap">
+                                <a href="#" title="twitter"><i class="social-icon icon-twitter"></i></a>
+                                <a href="#" title="skype"><i class="social-icon icon-skype"></i></a>
+                                <a href="#" title="facebook"><i class="social-icon  icon-facebook-circled"></i></a>
+                                <a href="#" title="nstagram"><i class="social-icon icon-instagram"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="logo p-4">
+                    <div class="logo-des row align-items-center">
+                        <div class="col-12 col-md-8 d-flex flex-column align-items-center mh-100">
+                            <div class="">
+                                <p class="">
+                                    اکسترا می‌کوشد با گستره‌ای از کتاب‌ها و مجلات متنوع برای طیف وسیعی از کاربران تجربه
+                                    فوق‌العاده خریدکتاب و خواندن آن در دستگاه‌های هوشمند را فراهم کند.
+                                    اکسترا می‌کوشد با گستره‌ای از کتاب‌ها و مجلات متنوع برای طیف وسیعی از کاربران تجربه
+                                    فوق‌العاده خریدکتاب و خواندن آن در دستگاه‌های هوشمند را فراهم کند.
+                                </p>
+                            </div>
+                            <div class="p-3">
+                                <a href="#" class="btn-know">اطلاعات بیشتر</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 my-0 mx-auto">
+                            <img src="./assets/img/logo-book-shop.png" alt="logo" class="my-0 mx-auto">
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <hr>
+                    <p class="mb-0">© Copyright 2022 Manik Maity.</p>
+                </div>
+            </footer>
+            <!-- end footer -->
+
+        </div>
+
+        <!-- mobile fixed nav -->
+        <div class="position-fixed bottom-0 mobile-fixed-nav bg-dark p-3 w-100 d-block d-md-none">
+            <div class="row justify-content-around">
+                <a href="./contactusPage.html" class="d-flex flex-column col-3 contactUs">
+                    <i class="icon-mail"></i>
+                    <span>
+                        ارتباط با ما
+                    </span>
+                </a>
+                <a href="#footer" class="d-flex flex-column col-3 call">
+                    <i class="icon-phone"></i>
+                    <span>
+                        تماس
+                    </span>
+                </a>
+                <a href="./aboutusPage.html" class="d-flex flex-column col-3 aboutUs">
+                    <i class="icon-doc-text"></i>
+                    <span>
+                        درباره ما
+                    </span>
+                </a>
+                <a href="./index.html" class="d-flex flex-column col-3 mainPage">
+                    <i class="icon-home"></i>
+                    <span>
+                        صفحه اصلی
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!-- end mobile fixed nav -->
+    </div>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery-3.6.1.min.js"></script>
+    <!-- aos animation js -->
+    <script src="./assets/aos-master/dist/aos.js"></script>
+    <!-- wow animation -->
+    <script src="./assets/matthieua-WOW-07a2b50/dist/wow.min.js">
+        new WOW().init();
+    </script>
+    <!-- bootstrap js -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- swiper -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- script js -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

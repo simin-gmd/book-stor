@@ -1,0 +1,393 @@
+.grouping {
+    .baner {
+
+            img {
+                border-radius: 30px;
+                width: 100%;
+            }
+        
+    }
+
+    .main-title {
+        .br {
+            &::after {
+                position: relative;
+                display: block;
+                justify-content: center;
+                content: " ";
+                background-color: $lightGray;
+                width: 40%;
+                height: 2px;
+                margin: 0 auto;
+                top: 15px;
+                z-index: -1;
+            }
+        }
+
+        >span {
+            position: relative;
+            left: 2px;
+            color: $mainWhite;
+            background-color: $mainWhite;
+        }
+
+        .main-title-group {
+            text-decoration: none !important;
+            color: $mainWhite;
+            background-color: $mainPrimary;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .main-title-name {
+            @include textStyle($mainBlack, 3rem, bold, 3rem);
+
+            /*             span {
+                @include textStyle($mainBlack, 2.9rem, normal, 2rem)
+            } */
+
+        }
+    }
+
+
+    .action-group {
+        background-color: rgb(41, 92, 143);
+        border-radius: 50px;box-shadow: 0px 3px 27px rgba($color: #000000, $alpha: .1);
+
+        &:hover {
+            box-shadow: 0px 3px 27px rgba($color: #000000, $alpha: .5);
+
+            .view-coll {
+                a {
+                    background-color: $mainWhite;
+                    color: $mainPrimary !important;
+                    transform: translateX(100px);
+
+                    i {
+                        background-color: $mainPrimary;
+                        color: $mainWhite;
+                    }
+
+                }
+            }
+
+
+        }
+
+        .content {
+            position: absolute;
+            top: 21%;
+            right: 0%;
+            transform: translate(-10%, -50%);
+            color: var(--mainWhite);
+        }
+    }
+
+    .bestselling-group {
+        background-color: rgb(139, 176, 212);
+        border-radius: 30px;
+        box-shadow: 0px 3px 27px rgba($color: #000000, $alpha: .1);
+
+        &:hover {
+            box-shadow: 0px 3px 27px rgba($color: #000000, $alpha: .5);
+
+            .view-coll {
+                a {
+                    background-color: $mainWhite;
+                    color: $mainPrimary !important;
+                    transform: translateX(100px);
+
+                    i {
+                        background-color: $mainPrimary;
+                        color: $mainWhite;
+                    }
+
+                }
+            }
+
+
+        }
+    }
+
+    .bio-group {
+        background-color: rgb(214, 210, 210);
+        border-radius: 30px;
+        box-shadow: 0px 3px 27px rgba($color: #000000, $alpha: .1);
+
+        &:hover {
+            box-shadow: 0px 3px 27px rgba($color: #000000, $alpha: .5);
+
+            .view-coll {
+                a {
+                    background-color: $mainWhite;
+                    color: $mainPrimary !important;
+                    transform: translateX(100px);
+
+                    i {
+                        background-color: $mainPrimary;
+                        color: $mainWhite;
+                    }
+
+                }
+            }
+
+
+        }
+    }
+
+    .clossic-group {
+        background-color: rgb(26, 32, 37);
+        border-radius: 30px;
+        box-shadow: 0px 3px 27px rgba($color: #000000, $alpha: .1);
+
+        &:hover {
+            box-shadow: 0px 3px 27px rgba($color: #000000, $alpha: .5);
+
+            .view-coll {
+                a {
+                    background-color: $mainWhite;
+                    color: $mainPrimary !important;
+                    transform: translateX(100px);
+
+                    i {
+                        background-color: $mainPrimary;
+                        color: $mainWhite;
+                    }
+
+                }
+            }
+
+
+        }
+    }
+
+    .workshop-group {
+        background-color: rgb(238, 95, 39);
+        border-radius: 30px;
+        box-shadow: 0px 3px 27px rgba($color: #000000, $alpha: .1);
+
+        &:hover {
+            box-shadow: 0px 3px 27px rgba($color: #000000, $alpha: .5);
+
+            .view-coll {
+                a {
+                    background-color: $mainWhite;
+                    color: $mainPrimary !important;
+                    transform: translateX(100px);
+
+                    i {
+                        background-color: $mainPrimary;
+                        color: $mainWhite;
+                    }
+
+                }
+            }
+
+
+        }
+    }
+
+    .gallery-item {
+        img {
+            width: 200px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .content {
+            direction: rtl;
+
+            .title {
+                @include textStyle($mainWhite, 1.2rem, 1rem, 2rem);
+                white-space: nowrap;
+
+            }
+
+            .view-coll {
+                a {
+                    padding: 6px 10px;
+                    border: 1px solid $mainWhite;
+                    border-radius: 50px;
+                    color: $mainWhite;
+                    background-color: none;
+                    transition: all .4s linear;
+
+
+                    i {
+                        border: 1px solid white;
+                        border-radius: 50%;
+                        font-size: .9rem;
+                        margin-left: 5px;
+                        margin-right: -3px;
+                        padding: 3px 4px 0px 2px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.gallery-item {
+    background: var(--mainBlack);
+    position: relative;
+    cursor: pointer;
+
+}
+
+
+.gallery-item .content {
+    position: absolute;
+    top: 21%;
+    right: 0%;
+    // margin: 0 auto;
+    transform: translate(-10%, -50%);
+    color: var(--mainWhite);
+    z-index: 100;
+}
+
+
+
+.gallery-item {
+    &::after {
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        outline: 0.5rem solid var(--mainWhite);
+        outline-offset: -1rem;
+        transition: all .7s ease-in-out;
+        transform: scale(1);
+    }
+}
+
+
+.grouping-items {
+    direction: rtl;
+
+    .title-grouping {
+        @include textStyle($mainBlack, 1.3rem, 2rem, 2rem);
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+            text-align: center;
+            // font-size: 10px;
+            background: #fff;
+            display: flex;
+            // justify-content: center;
+            // align-items: center;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 3px 27px rgba($color: #000000, $alpha: .1);
+
+            &:hover {
+                box-shadow: 0px 3px 27px rgba($color: #000000, $alpha: .2);
+
+            }
+
+            .book-elm {
+                &:hover {
+                    .extra-opt {
+                        margin: 55% 70%;
+                        opacity: 1;
+                    }
+
+                    .book-name {
+                        color: $mainPrimary;
+                    }
+                }
+
+                >div {
+                    margin-bottom: -24px;
+                }
+
+                .extra-opt {
+                    position: absolute;
+                    border-radius: 100px;
+                    padding: 2px;
+                    background-color: $mainPrimary;
+                    opacity: 0;
+                    margin: 55% 82%;
+                    overflow-x: hidden;
+                    transition: all .3s ease-in-out;
+
+                    i {
+                        font-size: 18px;
+                        font-weight: 0.8rem;
+                        color: $mainWhite;
+                        border-radius: 50%;
+                        padding: 7px;
+                        transition: all .2s ease-in-out;
+
+                        &:hover {
+                            background-color: $mainWhite;
+                            color: $mainPrimary;
+                        }
+
+                    }
+                }
+
+                img {
+                    display: block;
+                    max-width: 100%;
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    border-radius: 7px;
+                    box-shadow: 0px 7px 15px rgba($color: #000000, $alpha: .1);
+                }
+
+                .book-name {
+                    color: $textColor;
+                }
+
+                .buy-btn {
+                    text-decoration: none !important;
+                    color: $mainWhite;
+                    background-color: $mainPrimary;
+                    padding: 10px;
+                    transition: all .3s linear;
+                    font-size: .7rem;
+                    position: relative;
+                    top: -40px;
+
+                    &:hover {
+                        background-color: $mainBlack;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@include media(XS) {
+    .grouping-items {
+        .swiper {
+            .swiper-slide {
+                .book-elm {
+                    &:hover {
+                        .extra-opt {
+                            margin: 55% 62%;
+                        }
+                    }
+
+                    .extra-opt {
+                        i {
+
+                            padding: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

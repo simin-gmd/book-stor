@@ -1,0 +1,36 @@
+@mixin media($size) {
+    @if($size ==XXS){
+        @media (min-width: 222px) and (max-width: 400px) {
+            @content;
+        }
+    }
+    @if($size ==XS) {
+        @media (max-width: 576px) {
+            @content;
+        }
+    }
+
+    @else if($size ==SM) {
+        @media (min-width: 576px) and (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if($size ==MD) {
+        @media (min-width: 768px) and (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @else if($size == LG) {
+        @media (min-width: 992px) and (max-width:1300px) {
+            @content;
+        }
+    }
+
+    @else if($size == XLG) {
+        @media (min-width: 1300px) and (max-width: 13000px) {
+            @content;
+        }
+    }
+}

@@ -1,0 +1,244 @@
+.bestselling {
+    background-color: $bgColor;
+    direction: rtl;
+
+    .main-title {
+        .br {
+            &::after {
+                position: relative;
+                display: block;
+                justify-content: center;
+                content: " ";
+                background-color: $lightGray;
+                width: 40%;
+                height: 2px;
+                margin: 0 auto;
+                top: 15px;
+                z-index: 0;
+            }
+        }
+
+        >span {
+            position: relative;
+            left: -2px;
+            color: $bgColor;
+            background-color: $bgColor;
+        }
+
+        .main-title-group {
+            text-decoration: none !important;
+            color: $mainWhite;
+            background-color: $mainPrimary;
+            padding: 10px;
+            margin: 0;
+            z-index: 1;
+            position: relative;
+        }
+
+        .main-title-name {
+            @include textStyle($mainBlack, 2rem, bold, 3rem);
+        }
+    }
+
+    .title-grouping {
+        @include textStyle($mainBlack, 1.3rem, 2rem, 2rem);
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+            border-radius: 20px;
+            text-align: center;
+            // font-size: 10px;
+            background: #fff;
+            display: flex;
+            // justify-content: center;
+            // align-items: center;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 3px 27px rgba($color: #000000, $alpha: .1);
+            overflow: hidden;
+
+            &:hover {
+                box-shadow: 0px 3px 27px rgba($color: #000000, $alpha: .2);
+
+                &:hover {
+                    img {
+                        transform: scale(.4);
+                        transform-origin: top;
+                        // bottom: 100px;
+                        // left: 40%;
+                        top: 10px;
+
+                    }
+
+                    .extra-opt {
+                        margin: 55% 0%;
+                        opacity: 1;
+                    }
+
+                    .book-name {
+                        color: $mainPrimary;
+                    }
+                }
+
+
+            }
+
+            .book-elm {
+
+                >div {
+                    margin-bottom: -24px;
+                }
+
+                .extra-opt {
+                    text-align: start;
+                    position: absolute;
+                    border-radius: 100px;
+                    padding: 2px;
+                    // background-color: $mainPrimary;
+                    opacity: 0;
+                    margin: 55% 82%;
+                    // overflow-x: hidden;
+                    transition: all .5s ease-in-out;
+
+                    .bookpublishing {
+                        transition: all .21s ease-in-out;
+                    }
+
+                    .bookpage {
+                        transition: all .22s ease-in-out;
+
+                    }
+
+                    .bookcategory {
+                        transition: all .23s ease-in-out;
+
+                    }
+
+                    .bookprice {
+                        transition: all .24s ease-in-out;
+                    }
+
+                    .ratingbox {
+                        transition: all .25s ease-in-out;
+
+                        i {
+                            color: #ffbb00;
+                        }
+                    }
+
+                    strong {
+                        font-size: 12px;
+                        font-weight: 0.3rem;
+                        color: $textColor;
+                        padding: 7px;
+                        transition: all .3s ease-in-out;
+                        white-space: nowrap;
+
+                        // &:hover {
+                        //     background-color: $mainWhite;
+                        //     color: $mainPrimary;
+                        // }
+
+                    }
+
+                }
+
+                img {
+                    transition: all .3s linear;
+                    position: relative;
+                    transform: scale(1);
+                    padding-top: 15px;
+                    display: block;
+                    max-width: 100%;
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    border-radius: 15px;
+                    box-shadow: 0px 7px 15px rgba($color: #000000, $alpha: .1);
+                }
+
+                .book-name {
+                    color: $textColor;
+                }
+
+
+
+                .buy-btn {
+                    /*      text-decoration: none !important;
+                background-color: $mainPrimary;
+                @include textStyle($mainWhite, 0.7rem ,1.1rem ,2.5rem);
+                padding: 10px;
+                transition: all .3s linear;
+    
+                
+    
+                &:hover {
+                    background-color: $mainBlack;
+                } */
+
+
+                    text-decoration: none !important;
+                    color: $mainWhite;
+                    background-color: $mainPrimary;
+                    padding: 10px 30px;
+                    transition: all .3s linear;
+                    font-size: .6rem;
+                    // line-height: 2.5rem;
+                    // display: inline-block;
+                    position: relative;
+                    top: -45px;
+
+                    &:hover {
+                        background-color: $mainBlack;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .see-all-book {
+        text-decoration: none !important;
+        color: $mainWhite;
+        background-color: $mainPrimary;
+        padding: 10px;
+        transition: all .3s linear;
+
+        &:hover {
+            background-color: $mainBlack;
+        }
+    }
+}
+
+.shape {
+    transform: rotate(180deg);
+}
+@include media(XS){
+    .bestselling{
+        .swiper{
+            .swiper-slide{
+                border-radius: 10px;
+                .book-elm{
+                    img{
+                        margin-top: 0 !important;
+                        margin-bottom: 27px !important;
+                    }
+                    .buy-btn{
+                        text-decoration: none !important;
+                        color: #fff;
+                        background-color: #758bfd;
+                        padding: 10px 12px;
+                        transition: all 0.3s linear;
+                        font-size: 0.6rem;
+                        position: relative;
+                        top: -36px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,439 @@
+.book-page {
+
+    // background-color: #ffbb00 !important;
+    .book-page-content {
+        .book-content-sec {
+            padding: 20px;
+            direction: rtl;
+
+            .book-name {
+                @include textStyle($mainPrimary, 2rem, 2rem, 2rem)
+            }
+
+            .bookformat {
+                .paperformat {
+                    .active-format {
+                        border: 2px solid $mainBlack !important;
+                    }
+
+                    span {
+                        background-color: $bgColor;
+                        border: 2px solid $bgColor;
+                        padding: 15px;
+                        transition: all .2s linear;
+
+                        &:hover {
+                            border: 2px solid $mainBlack;
+                        }
+
+                        img {
+                            display: inline-block;
+                        }
+                    }
+                }
+
+
+                .onlineformat {
+                    .active-format {
+                        border: 2px solid $mainBlack !important;
+                    }
+
+                    span {
+                        background-color: $bgColor;
+                        border: 2px solid $bgColor;
+                        padding: 15px;
+                        transition: all .2s linear;
+
+                        &:hover {
+                            border: 2px solid $mainBlack;
+                        }
+
+                        img {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+
+        .ratingbox {
+            i {
+                color: #ffbb00;
+            }
+        }
+
+        .quantity {
+            input {
+                width: 25%;
+                border-radius: 0px;
+                text-align: center;
+                border: none;
+                background: $bgColor;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            .quantity-down,
+            .quantity-up {
+                margin: 0 0px;
+                padding: 10px 17px;
+                background-color: $bgColor;
+                transition: all .3s linear;
+                font-size: 1.2rem;
+                font-weight: bold;
+                // border: 1px solid $mainPrimary;
+
+                &:hover {
+                    background-color: $mainPrimary;
+                    color: $mainWhite;
+                }
+            }
+
+            .quantity-down {
+                border-radius: 0px 25px 25px 0px;
+            }
+
+            .quantity-up {
+                border-radius: 25px 0px 0px 25px;
+            }
+        }
+
+        .buy-btn {
+            text-decoration: none !important;
+            color: $mainWhite;
+            background-color: $mainPrimary;
+            padding: 10px 30px;
+            transition: all .3s linear;
+            font-size: .8rem;
+            // line-height: 2.5rem;
+            // display: inline-block;
+            // position: relative;
+            // top: -45px;
+
+            &:hover {
+                background-color: $mainBlack;
+            }
+        }
+
+        .add-fav {
+
+            // padding: 10px 10px;
+            // i {
+            font-size: 18px;
+            background: $mainPrimary;
+            font-weight: 0.8rem;
+            color: $mainWhite;
+            border-radius: 50%;
+            padding: 7px 7px 5px 7px;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                // color: $mainPrimary;
+                background: $mainBlack;
+            }
+
+            // }
+        }
+
+        .extra-elm {
+            .extra-elm-div {
+                box-shadow: 0px 4px 14px rgba($color: $mainPrimary, $alpha: .4);
+                border-radius: 10px;
+                // padding: 10px 0px;
+                position: relative;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    box-shadow: 0px 4px 14px rgba($color: $mainPrimary, $alpha: .8);
+                    left: 2px;
+                }
+
+                .title {
+                    i {
+                        // border: 1px solid gray;
+                        border-radius: 50%;
+                        background-color: $bgColor;
+                    }
+
+                    color: $mainBlack;
+                    // font-weight: bold;
+                    // border-bottom: 2px solid $mainPrimary;
+                }
+
+                .dec {
+                    @include textStyle(gray, .8rem, 1rem, 1rem);
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+
+    .tabs-sec {
+        background-color: $bgColor;
+
+        .nav-tabs {
+            border: none;
+
+            .active-tab {
+                background-color: $mainPrimary;
+                color: $mainWhite;
+                border: none;
+
+            }
+
+            .deactive-tab {
+                border-top: 2px solid $mainPrimary;
+
+                &:hover {
+                    background-color: $mainWhite;
+                }
+            }
+        }
+
+        .discription {
+            border-radius: 10px;
+            background-color: $mainPrimary;
+            direction: rtl;
+            box-shadow: 0px 4px 14px rgba($color: $mainPrimary, $alpha: 1);
+            position: relative;
+            bottom: 2px;
+            overflow: hidden;
+
+            &::after {
+                content: "";
+                position: absolute;
+                background: #fff;
+                width: 92%;
+                height: 144%;
+                top: -3%;
+                right: -45%;
+                z-index: 1;
+                transform: rotate(35deg);
+                overflow: hidden;
+                border-radius: 6%;
+                opacity: 0.1;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                background: #fff;
+                width: 117%;
+                height: 79%;
+                top: -41%;
+                right: -47%;
+                z-index: 1;
+                transform: rotate(35deg);
+                overflow: hidden;
+                border-radius: 10%;
+                opacity: 0.1;
+            }
+        }
+
+        .cantactus-form {
+            border-radius: 10px;
+            background-color: $mainPrimary;
+            direction: rtl;
+            box-shadow: 0px 4px 14px rgba($color: $mainPrimary, $alpha: 1);
+            position: relative;
+            bottom: 2px;
+            overflow: hidden;
+
+            &::after {
+                content: "";
+                position: absolute;
+                background: #fff;
+                width: 92%;
+                height: 144%;
+                top: -3%;
+                right: -45%;
+                z-index: 1;
+                transform: rotate(35deg);
+                overflow: hidden;
+                border-radius: 6%;
+                opacity: 0.1;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                background: #fff;
+                width: 117%;
+                height: 79%;
+                top: -41%;
+                right: -47%;
+                z-index: 1;
+                transform: rotate(35deg);
+                overflow: hidden;
+                border-radius: 10%;
+                opacity: 0.1;
+            }
+
+            .comments {
+                position: relative;
+                z-index: 3;
+
+                .customers-div {
+                    position: relative;
+                    border-radius: 30px;
+                    box-shadow: 0px 4px 14px rgba($color: $mainBlack, $alpha: 0.3);
+
+                    &:hover {
+                        box-shadow: 0px 4px 14px rgba($color: $mainBlack, $alpha: 0.5);
+                        left: -2px;
+                    }
+                }
+            }
+
+            .title {
+                @include textStyle($mainWhite, 2rem, 2rem, 2rem);
+            }
+
+            .form-contact {
+                form {
+                    z-index: 2;
+                    position: relative;
+
+                    div {
+
+                        .form-control,
+                        .form-select {
+                            outline: none;
+                            border-radius: 18px;
+                            background: white;
+                        }
+                    }
+
+                    .form-control-btn {
+                        text-decoration: none !important;
+                        color: $mainWhite;
+                        background-color: $mainBlack;
+                        border-radius: 25px;
+                        padding: 8px 18px;
+                        transition: all .3s linear;
+                        border: 1px solid $mainBlack;
+
+                        &:hover {
+                            background-color: $mainWhite;
+                            color: $mainPrimary;
+                            border: 1px solid $mainPrimary;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .book-img-sec {
+
+
+        .book-shape {
+            &::after {
+                content: "";
+                position: absolute;
+                background: #758bfd;
+                content: "";
+                top: -5%;
+                left: 20%;
+                bottom: 0;
+                right: 0px;
+                position: absolute;
+                width: 80%;
+                height: 110%;
+                background-color: #758bfd;
+                z-index: -1;
+                border-radius: 10px;
+
+            }
+
+            img {
+                justify-content: center;
+                // position: relative;
+                display: block;
+                margin: auto;
+                max-width: 90%;
+                max-height: 90%;
+                top: 5%;
+                right: 10%;
+                border-radius: 10px;
+
+
+            }
+        }
+    }
+
+    .related-book {
+        background: $bgColor;
+        border-radius: 18px;
+
+        .main-title {
+
+
+
+
+            .main-title-group {
+                text-decoration: none !important;
+                color: $mainWhite;
+                background-color: $mainPrimary;
+                padding: 10px;
+                margin: 0;
+            }
+
+            .main-title-name {
+                @include textStyle($mainBlack, 3rem, bold, 3rem);
+
+                /*             span {
+                @include textStyle($mainBlack, 2.9rem, normal, 2rem)
+            } */
+
+            }
+        }
+
+        .title {
+            background: $mainPrimary;
+            color: $mainWhite;
+            white-space: nowrap;
+            border-radius: 28px;
+            // width: 30%;
+        }
+    }
+}
+@include media(XS) {
+    .book-page {
+        .book-img-sec {
+            .book-shape {
+                &::after {
+                    width: 60% !important;
+                    // background-color: yellow !important;
+                }
+            }
+        }
+    }
+}
+// Hide Arrows From Input Number
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+// input[type=number] {
+//   -moz-appearance: textfield;
+// }
+@include media(SM) {
+    .book-page {
+        .book-img-sec {
+            .book-shape {
+                &::after {
+                    width: 60% !important;
+                    background-color: yellow !important;
+                }
+            }
+        }
+    }
+}

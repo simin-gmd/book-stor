@@ -1,0 +1,216 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "8b80d36d4ef43889db10bc1f0dc9a862",
+      "css": "user",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ccddff8e8670dcd130e3cb55fdfc2fd0",
+      "css": "down-open",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d870630ff8f81e6de3958ecaeac532f2",
+      "css": "left-open",
+      "code": 59395,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "399ef63b1e23ab1b761dfbb5591fa4da",
+      "css": "right-open",
+      "code": 59396,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "fe6697b391355dec12f3d86d6d490397",
+      "css": "up-open",
+      "code": 59397,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "5408be43f7c42bccee419c6be53fdef5",
+      "css": "doc-text",
+      "code": 61686,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9dd9e835aebe1060ba7190ad2b2ed951",
+      "css": "search",
+      "code": 59398,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4c1ef492f1d2c39a2250ae457cee2a6e",
+      "css": "instagram",
+      "code": 61805,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d090355c31f497b61d676416c1fd39fb",
+      "css": "twitter",
+      "code": 62217,
+      "src": "entypo"
+    },
+    {
+      "uid": "bc50457410acf467b8b5721240768742",
+      "css": "facebook",
+      "code": 62220,
+      "src": "entypo"
+    },
+    {
+      "uid": "bf882b30900da12fca090d9796bc3030",
+      "css": "mail",
+      "code": 59402,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "84cf1fcc3fec556e7eaeb19679ca2dc9",
+      "css": "star-half-alt",
+      "code": 61731,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "8f8278fbe5a2a0ea836be3c408b005d2",
+      "css": "star-half",
+      "code": 59403,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d17030afaecc1e1c22349b99f3c4992a",
+      "css": "star-empty",
+      "code": 59404,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "474656633f79ea2f1dad59ff63f6bf07",
+      "css": "star",
+      "code": 59405,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "f3dc2d6d8fe9cf9ebff84dc260888cdf",
+      "css": "heart-empty",
+      "code": 59406,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d73eceadda1f594cec0536087539afbf",
+      "css": "heart",
+      "code": 59407,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d7271d490b71df4311e32cdacae8b331",
+      "css": "home",
+      "code": 59400,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d531ea7e8c094b73df941ed0bac921f3",
+      "css": "shopping-bag",
+      "code": 62096,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e126987944593dfee041f8e2a68145db",
+      "css": "basket-1",
+      "code": 59401,
+      "src": "entypo"
+    },
+    {
+      "uid": "02298f2f488e74e7b5f413e2752c36b3",
+      "css": "skype",
+      "code": 59394,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M962.5 578.1C965.6 553.1 968.8 525 968.8 500 968.8 240.6 759.4 31.3 500 31.3 475 31.3 446.9 34.4 421.9 37.5 378.1 12.5 331.3 0 281.3 0 125 0 0 125 0 281.3 0 331.3 12.5 378.1 37.5 421.9 34.4 446.9 31.3 475 31.3 500 31.3 759.4 240.6 968.8 500 968.8 525 968.8 553.1 965.6 578.1 962.5 621.9 987.5 668.8 1000 718.8 1000 875 1000 1000 875 1000 718.8 1000 668.8 987.5 621.9 962.5 578.1ZM743.8 646.9C731.3 696.9 700 740.6 653.1 765.6 621.9 781.3 587.5 793.8 546.9 796.9 531.3 800 515.6 800 500 800 462.5 800 425 793.8 387.5 784.4 340.6 768.8 303.1 746.9 278.1 709.4 259.4 687.5 250 662.5 250 637.5 250 606.3 265.6 578.1 293.8 565.6 325 550 356.3 553.1 381.3 571.9 396.9 584.4 406.3 596.9 415.6 609.4 434.4 634.4 450 646.9 468.7 650 500 656.2 525 656.2 546.9 643.7 565.6 634.4 568.8 625 568.8 615.6 568.8 609.4 568.8 603.1 559.4 596.9 553.1 590.6 540.6 587.5 528.1 587.5L518.7 584.4C503.1 581.2 487.5 575 471.9 571.9 440.6 562.5 406.2 556.2 375 546.9 340.6 537.5 309.4 518.7 287.5 490.6 262.5 462.5 253.1 425 253.1 378.1 253.1 321.9 275 278.1 315.6 246.9 343.8 225 375 212.5 409.4 203.1 428.1 200 446.9 196.9 459.4 196.9L471.9 193.7 475 193.7C556.3 193.7 615.6 212.5 665.6 246.9 693.7 265.6 712.5 290.6 718.7 315.6 728.1 343.7 721.9 368.7 706.2 387.5 690.6 409.4 662.5 418.7 634.4 418.7 606.3 418.7 587.5 403.1 575 390.6 571.9 387.5 568.8 384.4 565.6 381.2 559.4 375 553.1 368.7 546.9 362.5 528.1 346.9 503.1 340.6 471.9 343.7 462.5 343.7 450 346.9 440.6 353.1 431.2 356.2 428.1 368.7 428.1 375 428.1 378.1 428.1 381.2 437.5 384.4 453.1 390.6 468.7 396.9 484.4 400 500 403.1 518.7 409.4 534.4 412.5 559.4 418.7 587.5 425 612.5 431.2 656.2 443.8 690.6 468.7 715.6 503.1 746.9 543.8 756.3 596.9 743.8 646.9Z",
+        "width": 1000
+      },
+      "search": [
+        "skype-app-chat-logo-svgrepo-com"
+      ]
+    },
+    {
+      "uid": "ce1d525f3f31024c6a6b38f5e9a88953",
+      "css": "facebook-circled",
+      "code": 62221,
+      "src": "entypo"
+    },
+    {
+      "uid": "559647a6f430b3aeadbecd67194451dd",
+      "css": "menu",
+      "code": 61641,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "5d2d07f112b8de19f2c0dbfec3e42c05",
+      "css": "spin5",
+      "code": 59448,
+      "src": "fontelico"
+    },
+    {
+      "uid": "12f4ece88e46abd864e40b35e05b11cd",
+      "css": "ok",
+      "code": 59408,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3d4ea8a78dc34efe891f3a0f3d961274",
+      "css": "info",
+      "code": 61737,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9f7e588c66cfd6891f6f507cf6f6596b",
+      "css": "phone",
+      "code": 59409,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "c1f1975c885aa9f3dad7810c53b82074",
+      "css": "lock",
+      "code": 59410,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d745d7c05b94e609decabade2cae12cb",
+      "css": "quote-right",
+      "code": 61710,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ab95e1351ebaec5850101097cbf7097f",
+      "css": "quote-left",
+      "code": 61709,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "7480a298ce334eef70193895e799c3fd",
+      "css": "headphones",
+      "code": 59399,
+      "src": "elusive"
+    },
+    {
+      "uid": "15ba51cbb4d05e6fb88f03a31a7c711c",
+      "css": "info-circled-alt",
+      "code": 61574,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "ccc2329632396dc096bb638d4b46fb98",
+      "css": "mail-alt",
+      "code": 61664,
+      "src": "fontawesome"
+    }
+  ]
+}

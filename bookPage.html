@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/styles/css/bootstrap.rtl.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/styles/css/main.css">
+    <!-- awiper -->
+    <link rel="stylesheet" href="./assets/styles/css/swiper-bundle.min.css" />
+    <!-- aos animation -->
+    <link href="./assets/aos-master/dist/aos.css" rel="stylesheet">
+    <!-- wow animation -->
+    <link rel="stylesheet" href="./assets/matthieua-WOW-07a2b50/css/site.css">
+    <link rel="stylesheet" href="./assets/animate-css-animate.css-e8c4fab/animate.min.css">
+    <!-- fontello for icon -->
+    <link rel="stylesheet" href="./assets/fontello-7b6b86bb/css/fontello.css">
+    <title>فروشگاه کتاب</title>
+</head>
+
+
+<body>
+    <div class="container-fluid book-page m-0 p-0">
+        <div class="m-0 p-0">
+            <!-- header section -->
+            <div class="header me-0 me-lg-4 ms-0">
+                <!--  navbar -->
+                <div class="lgNavbar row">
+                    <div class="col-3 py-5 d-none d-lg-block">
+                        <div class="d-flex flex-row gap-4 justify-content-center  align-items-center">
+                            
+                            <a class="login-btn p-3 pe-4 rounded-pill text-center fw-bold " href="./login.html"
+                            type="button" class="btn btn-primary">
+                            ورود / ثبت نام
+                            <i class="icon-user"></i>
+                        </a>
+                        
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-12 navbarbody bg-white px-0 px-sm-3">
+                        <nav class="navbar navbar-expand-lg px-sm-3 py-0">
+                            <div class="container-fluid px-2 px-sm-3">
+                                <div class="navbarBtns">
+                                    <button class="navbar-toggler menu-btn" type="button" data-bs-toggle-lg="collapse"
+                                        data-bs-target-lg="#navbarSupportedContent"
+                                        aria-controls-lg="navbarSupportedContent" aria-expanded="false"
+                                        aria-label="Toggle navigation" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                        <span class="icon-menu"></span>
+                                    </button>
+                                    <button class="products-btn navbar-toggler" type="button">
+                                        <a href="./login.html">
+                                            <span class="icon-user"></span>
+                                        </a>
+                                    </button>
+                                </div>
+                                <div class="d-flex flex-row justify-content-around offcanvas offcanvas-end"
+                                    tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-body" id="navbarNavAltMarkup">
+
+                                        <button type="button" class="btn-close text-reset d-lg-none"
+                                            data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                                        <div class="navbar-nav fw-bold">
+                                            <div class="nav-item order-5 order-md-0">
+                                                <a class="nav-link " href="./contactusPage.html"> تماس با ما</a>
+                                            </div>
+                                            <div class="nav-item pages dropdown order-4 order-md-1">
+                                                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="icon-down-open"></i>
+                                                    صفحات
+                                                </a>
+                                                <ul class="dropdown-menu py-3 px-0 sub-menu-pages-1"
+                                                    aria-labelledby="dropdownMenuButton">
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">وبلاگ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./aboutusPage.html">درباره ما</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">سوالات متداول</a>
+                                                    </li>
+                                                    <li class="open-sub-menu-2">
+                                                        <a class="col-9 dropdown-item" href="#">منوی کشویی</a>
+                                                        <i class="icon-left-open col-1"></i>
+
+                                                        <ul
+                                                            class="py-3 px-0 sub-menu-pages-2 dropdown-menu dropdown-submenu">
+                                                            <li>
+                                                                <a class="dropdown-item" href="#">زیر منو 1</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#">زیر منو 2</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#">زیر منو 3</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="nav-item grouping dropdown order-3 order-md-2">
+                                                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="icon-down-open"></i>
+                                                    دسته بندی </a>
+                                                <!-- hover grouping section -->
+                                                <div class="sub-menu-grouping dropdown-menu"
+                                                    aria-labelledby="dropdownMenuButton">
+                                                    <div class="row">
+                                                        <ul class="col-6 py-3">
+                                                            <li>
+                                                                <a class="fw-bold title-grouping text-white"
+                                                                    href="#">مجموعه جذاب</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">ماجراجویی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="./groupingPage.html">رمان</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">کمدی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">فانتزی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">تاریخی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">جنایی</a>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="col-6 py-3">
+                                                            <li>
+                                                                <a class="fw-bold title-grouping text-white"
+                                                                    href="#">مجموعه رایگان</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">ستاره شناسی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">جئوگرافی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">ورزشی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">تاریخی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">ادبیات ئاستانی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">اقتصاد</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">کلاسیک</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">بیوگرافی</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- end hover grouping section -->
+                                            </div>
+                                            <div class="nav-item collection dropdown order-2 order-md-3">
+                                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="icon-down-open"></i>
+                                                    مجموعه </a>
+
+                                                <!-- hover collection section -->
+                                                <div class="sub-menu-collection dropdown-menu"
+                                                    aria-labelledby="dropdownMenuButton">
+
+                                                    <div class="row">
+                                                        <ul class="col-6 py-3">
+                                                            <li>
+                                                                <a class="" href="#">ماجراجویی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="./groupingPage.html">رمان</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">پرفروشترین ها</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">بیوگرافی</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="" href="#">کارگاه رمز و راز</a>
+                                                            </li>
+
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                                <!-- end hover collection section -->
+                                            </div>
+                                            <div class="nav-item order-1 order-md-4 active">
+                                                <a class="nav-link" href="#"> کتاب ها </a>
+                                            </div>
+                                            <div class="nav-item order-0 order-md-5">
+                                                <a class="nav-link" href="./index.html"> صفحه اصلی</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--         logo -->
+                                <a class="navbar-brand" href="#">
+                                    <img src="./assets/img/logo-book-shop.png" class="d-inline-block" alt="logo">
+                                </a>
+                                <!--        logo -->
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- hover collection section -->
+
+                    <!-- end hover collection section -->
+
+                </div>
+                <!--  end navbar -->
+                <!-- header content section-->
+                <div class="d-flex flex-row w-100 header-content text-dark justify-content-end">
+                    <div class=" p-4">
+                        <nav dir="rtl" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="./index.html">صفحه اصلی </a></li>
+                                <li class="breadcrumb-item"><a href="#"> دسته بندی </a></li>
+                                <li class="breadcrumb-item"><a href="./groupingPage.html">رمان</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">کتابخانه ی نیمه شب</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <!-- end header content section-->
+            </div>
+            <!-- end header section -->
+            <div class="container-fluid book-page-content container-md py-5">
+                <div class="row align-items-start">
+                    <div class="col-12 col-sm-9 book-content-sec order-1 order-sm-0 align-self-start pt-0
+                    animate__fadeInUp wow animate__animated animate__delay-.5s d-flex flex-row flex-wrap">
+                        <div class="extra-opt p-5 pt-sm-0 col-12 col-lg-8 ">
+                            <div class="d-flex flex-column row pt-3 g-4 align-self-stretch">
+                                <h3 class="book-name mt-0">کتابخانه ی نیمه شب</h3>
+                                <strong class="bookpublishing row">
+                                    <p class="col-2 text-secondary">انتشارات:</p>
+                                    <b class="col mx-4">چشمه</b>
+                                </strong>
+                                <strong class="bookauthor row">
+                                    <p class="col-2 text-secondary">نویسنده:</p>
+                                    <b class="col mx-4">چارلز دیکنز</b>
+                                </strong>
+                                <strong class="bookpage row">
+                                    <p class="col-2 text-secondary">صفحات:</p>
+                                    <b class="col mx-4">206</b>
+                                </strong>
+                                <strong class="bookcategory row">
+                                    <p class="col-2 text-secondary">دسته بندی:</p>
+                                    <b class="col mx-4">ماجراجویی،سرگرمی</b>
+                                </strong>
+                                <strong class="bookprice row">
+                                    <p class="col-2 text-secondary">قیمت:</p>
+                                    <b class="col mx-4">231800 تومان</b>
+                                </strong>
+                                <div class="row bookformat gap-5">
+                                    <div class="onlineformat w-auto">
+                                        <span class="onlineform-btn">
+                                            <img src="./assets/img/tablet.webp" alt="">
+                                        </span>
+                                        <b class="d-block pt-4">
+                                            کتاب آنلاین
+                                        </b>
+                                    </div>
+                                    <div class="paperformat w-auto">
+                                        <span class="paperform-btn">
+                                            <img src="./assets/img/paper-book.webp" alt="">
+                                        </span>
+                                        <b class="d-block pt-4">
+                                            کتاب کاغذی
+                                        </b>
+                                    </div>
+                                </div>
+                                <div class="ratingbox"><span class="stars"><span>
+                                            <i clad-favss="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star-half-alt"></i>
+                                            <i class="icon-star-empty"></i>
+
+                                        </span></span>
+                                </div>
+                                <div class="d-flex flex-row form-outline quantity justify-content-start">
+                                    <label class="form-label" for="typeNumber"></label>
+                                    <span class="quantity-down d-inline  text-center">-</span>
+                                    <input min="1" max="100" type="number" id="typeNumber" inputmode="numeric" size="4"
+                                        autocomplete="off" value="1" class="form-control" title="تعداد " />
+                                    <span class="quantity-up d-inline text-center">+</span>
+                                </div>
+                                <div class="d-flex flex-row gap-3 align-items-center">
+                                    <a class="buy-btn rounded-pill text-center" href="#">
+                                        <i class="icon-basket-1"></i>
+                                        افزودن به سبد خرید
+                                    </a>
+                                    <!-- <div class="add-fav"> -->
+                                    <i class="icon-heart-empty add-fav"> </i>
+                                    <!-- </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 rounded-2 extra-elm text-start ">
+                            <div class="d-flex flex-column extra-elm-div">
+                                <div class=" border-gray mx-0 mb-2 p-2 py-3">
+                                    <div class="title">
+                                        <i class="icon-user text-secondary"></i>
+                                        <span>ارسال <b>رایگان</b> سفارش‌ها برای اعضا</span>
+                                    </div>
+                                    <div class="dec">
+                                        ۹ هزارتومان هزینه ارسال به سراسر ایران برای کاربران غیراکسترا
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column extra-elm-div">
+                                <div class=" border-gray  mx-0 mb-2 p-2 py-3">
+                                    <div class="title">
+                                        <i class="icon-doc-text text-secondary"></i>
+                                        <span>الان بخر، بعدا پرداخت کن!</span>
+                                    </div>
+                                    <div class="dec">
+                                        با اعتبار دیجی‌پی می‌توانید همین حالا خرید کنید
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column extra-elm-div">
+                                <div class=" border-gray  mx-0 mb-1 p-2 pt-3 ">
+                                    <div class="title">
+                                        <i class="icon-basket-1 text-secondary"></i>
+                                        <span>خرید اشتراک</span>
+                                    </div>
+                                    <div class="dec">
+                                        <ul>
+                                            <li>ارسال رایگان</li>
+                                            <li>
+                                                امکان ارسال فوری
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="text-dark">
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-sm-3 book-img-sec order-0 order-sm-1
+                        wow animate__animated animate__delay-.5s 
+                        animate__fadeInLeft">
+                        <div class="book-shape">
+                            <img src="./assets/img/bookimg.webp" alt="bookimg" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- description an review section -->
+            <img src="./assets/img/shape.svg" alt="" class="" width="100%">
+            <div class="container-fluid tabs-sec pb-3">
+                <div class="container" dir="rtl">
+                    <!-- nav for review and descriptions-->
+                    <ul class="nav nav-tabs justify-content-start px-4 gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link active-tab" aria-current="page" href="#" id="disc-btn">توضیحات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link deactive-tab" data-toggle="tab" href="#" id="review-btn">نظرات</a>
+                        </li>
+                    </ul>
+                    <!-- nav for review and descriptions-->
+                    <!-- tab contacts -->
+                    <div class="tab-content">
+                        <div id="discription" class="tab-pane active p-3 discription text-white">
+                            <h3 class="text-white">توضیحات</h3>
+                            <p class="small">البته لازم است توجه کنیم که هر کتاب می‌تواند در چند ژانر قرار بگیرد.
+                                در واقع نویسنده با ترکیب ژانرهای مختلف به گستردگی رمان خود و پیچیدگی شخصیت‌ها و رفتارهای
+                                آنان پرداخته است.
+                                همچنین باید گفت که دسته‌بندی مشخص و قطعی برای انواع ژانرهای کتاب وجود ندارد.</p>
+                        </div>
+                        <div id="review" class="tab-pane">
+                            <!-- contact us form -->
+                            <div class="cantactus-form col-12 col-md- px-4">
+                                <h3 class="pt-5 text-white">نظرات</h3>
+                                <!-- comments -->
+                                <div class="d-flex flex-row comments flex-wrap gap-3 mb-4 justify-content-start">
+                                    <div class="customers-div col-11 container px-5 py-2 bg-white m-0">
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-row align-items-center gap-2 mb-2">
+                                                <img src="./assets/img/1.webp" class="customers-img rounded-circle"
+                                                    width="5%">
+                                                <span class="small customers-title mt-1 fw-bold border-bt">لیلا
+                                                    حاتمی</span>
+                                            </div>
+                                            <div>
+                                                <p class=" small mb-0">
+                                                    یکی از نکات ثبت سایت کتاب اکسترا پاسخگویی سریع و به موقع ان به
+                                                    کاربران است .و همینطور مجموعه ی کامل ان ک اکثر انتشارات و سبک های
+                                                    کتاب را داراست.
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <span class="text-secondary small">2 روز قبل</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="customers-div col-11 container px-5 py-2 bg-white m-0">
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-row align-items-center gap-2 mb-2">
+                                                <img src="./assets/img/1.webp" class="customers-img rounded-circle"
+                                                    width="5%">
+                                                <span class="small customers-title mt-1 fw-bold border-bt">امیر
+                                                    نفیسی</span>
+                                            </div>
+                                            <div>
+                                                <p class=" small mb-0">
+                                                    یکی از نکات ثبت سایت کتاب اکسترا پاسخگویی سریع و به موقع ان به
+                                                    کاربران است .و همینطور مجموعه ی کامل ان ک اکثر انتشارات و سبک های
+                                                    کتاب را داراست.
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <span class="text-secondary small">1 هفته قبل</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="customers-div col-11 container px-5 py-2 bg-white m-0">
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-row align-items-center gap-2 mb-2">
+                                                <img src="./assets/img/1.webp" class="customers-img rounded-circle"
+                                                    width="5%">
+                                                <span class="small customers-title mt-1 fw-bold border-bt">روزبه
+                                                    خجسته</span>
+                                            </div>
+                                            <div>
+                                                <p class=" small mb-0">
+                                                    یکی از نکات ثبت سایت کتاب اکسترا پاسخگویی سریع و به موقع ان به
+                                                    کاربران است .و همینطور مجموعه ی کامل ان ک اکثر انتشارات و سبک های
+                                                    کتاب را داراست.
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <span class="text-secondary small">1ماه قبل</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end comments -->
+                                <h3 class="title py-4">با ما در تماس باشید</h3>
+                                <div class="form-contact">
+                                    <form>
+                                        <div class="form d-flex flex-row flex-wrap gap-5 justify-content-start">
+                                            <div class="col-5">
+                                                <label for="exampleFormControlInput1" class="label text-white py-1">*نام
+                                                    شما</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="col-5">
+                                                <label for="exampleFormControlInput1" class="label text-white py-1">*پست
+                                                    الکترونیکی</label>
+                                                <input type="email" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="col-5">
+                                                <label for="exampleFormControlInput1"
+                                                    class="label text-white py-1">7+3=?</label>
+                                                <input type="number" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="col-5">
+                                                <label for="exampleFormControlInput1"
+                                                    class="label text-white py-1">دپارتمان</label>
+                                                <select class="form-select" required="" name="subject">
+                                                    <option selected="" disabled="" value="">انتخاب موضوع</option>
+                                                    <option value="1">پشتیبانی</option>
+                                                    <option value="2">فروش</option>
+                                                    <option value="3">مالی</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-11">
+                                                <label for="exampleFormControlInput1" class="label text-white py-1">نظر
+                                                    شما</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                    rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                        <button name="submit" type="submit" class="form-control-btn my-5">ثبت و
+                                            ارسال</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- end contact us form -->
+                        </div>
+                    </div>
+                    <!-- end tab contacts -->
+                </div>
+            </div>
+            <div class="shape">
+                <img src="./assets/img/shape.svg" alt="" class="" width="100%">
+            </div>
+            <!-- end description and review section -->
+
+
+            <!-- Related books -->
+            <div class="grouping-items related-book container py-3 my-5 justify-content-center align-items-center">
+                <div class="main-title text-center py-5">
+                    <div class="main-title-group rounded-pill d-inline">
+                        محصولات مرتبط
+                    </div>
+
+                </div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper p-5 pt-0">
+                        <div class="swiper-slide  d-flex justify-content-center align-items-center">
+                            <div class="book-elm">
+                                <a href="#">
+                                    <div class="extra-opt">
+                                        <div class="d-flex flex-column">
+                                            <i class="icon-heart-empty add-fav"> </i>
+                                            <i class="icon-info-circled-alt"> </i>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/img/bookimg2.webp" alt="" class="d-block mt-0 mb-2 mx-auto"
+                                        width="200" height="200">
+                                    <span class="book-name fw-bold">نام کتاب</span>
+
+                                </a>
+                                <div class=" mt-5 pt-3">
+                                    <a class="buy-btn rounded-pill text-center" href="#">
+
+                                        <i class="icon-basket-1"></i>
+                                        افزودن ب سبد خرید
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center align-items-center">
+                            <div class="book-elm">
+                                <a href="#" class="">
+                                    <div class="extra-opt">
+                                        <div class="d-flex flex-column">
+                                            <i class="icon-heart-empty add-fav"></i>
+                                            <i class="icon-info-circled-alt"></i>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/img/bookimg3.webp" alt="" class="d-block mt-0 mb-2 mx-auto"
+                                        width="200" height="200">
+                                    <span class="book-name fw-bold my-5">نام کتاب</span>
+                                </a>
+                                <div class=" mt-5 pt-3">
+                                    <a href="#" class="buy-btn rounded-pill text-center">
+                                        <i class="icon-basket-1"></i>
+                                        افزودن ب سبد خرید
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center align-items-center">
+                            <div class="book-elm">
+                                <a href="#" class="">
+                                    <div class="extra-opt">
+                                        <div class="d-flex flex-column">
+                                            <i class="icon-heart-empty add-fav"></i>
+                                            <i class="icon-info-circled-alt"></i>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/img/bookimg3.webp" alt="" class="d-block mt-0 mb-2 mx-auto"
+                                        width="200" height="200">
+                                    <span class="book-name fw-bold my-5">نام کتاب</span>
+                                </a>
+                                <div class=" mt-5 pt-3">
+                                    <a href="#" class="buy-btn rounded-pill text-center">
+                                        <i class="icon-basket-1"></i>
+                                        افزودن ب سبد خرید
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide  d-flex justify-content-center align-items-center">
+                            <div class="book-elm">
+                                <a href="#">
+                                    <div class="extra-opt">
+                                        <div class="d-flex flex-column">
+                                            <i class="icon-heart-empty add-fav"></i>
+                                            <i class="icon-info-circled-alt"></i>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/img/bookimg2.webp" alt="" class="d-block mt-0 mb-2 mx-auto"
+                                        width="200" height="200">
+                                    <span class="book-name fw-bold">نام کتاب</span>
+
+                                </a>
+                                <div class=" mt-5 pt-3">
+                                    <a class="buy-btn rounded-pill text-center" href="#">
+
+                                        <i class="icon-basket-1"></i>
+                                        افزودن ب سبد خرید
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center align-items-center">
+                            <div class="book-elm">
+                                <a href="#" class="">
+                                    <div class="extra-opt">
+                                        <div class="d-flex flex-column">
+                                            <i class="icon-heart-empty add-fav"></i>
+                                            <i class="icon-info-circled-alt"></i>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/img/bookimg2.webp" alt="" class="d-block mt-0 mb-2 mx-auto"
+                                        width="200" height="200">
+                                    <span class="book-name fw-bold my-5">نام کتاب</span>
+                                </a>
+                                <div class=" mt-5 pt-3">
+                                    <a href="#" class="buy-btn rounded-pill text-center">
+                                        <i class="icon-basket-1"></i>
+                                        افزودن ب سبد خرید
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide  d-flex justify-content-center align-items-center">
+                            <div class="book-elm">
+                                <a href="#">
+                                    <div class="extra-opt">
+                                        <div class="d-flex flex-column">
+                                            <i class="icon-heart-empty add-fav"></i>
+                                            <i class="icon-info-circled-alt"></i>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/img/bookimg4.webp" alt="" class="d-block mt-0 mb-2 mx-auto"
+                                        width="200" height="200">
+                                    <span class="book-name fw-bold">نام کتاب</span>
+
+                                </a>
+                                <div class=" mt-5 pt-3">
+                                    <a class="buy-btn rounded-pill text-center" href="#">
+
+                                        <i class="icon-basket-1"></i>
+                                        افزودن ب سبد خرید
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center align-items-center">
+                            <div class="book-elm">
+                                <a href="#" class="">
+                                    <div class="extra-opt">
+                                        <div class="d-flex flex-column">
+                                            <i class="icon-heart-empty add-fav"></i>
+                                            <i class="icon-info-circled-alt"></i>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/img/bookimg5.webp" alt="" class="d-block mt-0 mb-2 mx-auto"
+                                        width="200" height="200">
+                                    <span class="book-name fw-bold my-5">نام کتاب</span>
+                                </a>
+                                <div class=" mt-5 pt-3">
+                                    <a href="#" class="buy-btn rounded-pill text-center">
+                                        <i class="icon-basket-1"></i>
+                                        افزودن ب سبد خرید
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide  d-flex justify-content-center align-items-center">
+                            <div class="book-elm">
+                                <a href="#">
+                                    <div class="extra-opt">
+                                        <div class="d-flex flex-column">
+                                            <i class="icon-heart-empty add-fav"></i>
+                                            <i class="icon-info-circled-alt"></i>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/img/bookimg2.webp" alt="" class="d-block mt-0 mb-2 mx-auto"
+                                        width="200" height="200">
+                                    <span class="book-name fw-bold">نام کتاب</span>
+
+                                </a>
+                                <div class=" mt-5 pt-3">
+                                    <a class="buy-btn rounded-pill text-center" href="#">
+
+                                        <i class="icon-basket-1"></i>
+                                        افزودن ب سبد خرید
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center align-items-center">
+                            <div class="book-elm">
+                                <a href="#" class="">
+                                    <div class="extra-opt">
+                                        <div class="d-flex flex-column">
+                                            <i class="icon-heart-empty add-fav"></i>
+                                            <i class="icon-info-circled-alt"></i>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/img/bookimg3.webp" alt="" class="d-block mt-0 mb-2 mx-auto"
+                                        width="200" height="200">
+                                    <span class="book-name fw-bold my-5">نام کتاب</span>
+                                </a>
+                                <div class=" mt-5 pt-3">
+                                    <a href="#" class="buy-btn rounded-pill text-center">
+                                        <i class="icon-basket-1"></i>
+                                        افزودن ب سبد خرید
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- end Related books group -->
+            <!-- go top btn -->
+            <a href="#" class="go-top-btn" type="button">
+                <span class=" icon-up-open"></span>
+            </a>
+            <!-- end go top btn -->
+                <!-- cart btn -->
+<div class="fixed-bottom">
+    <a href="./cartPage.html" class="shopping-bag-fixed position-relative">
+        <i class="icon-basket-1 shopping-bag-icon"></i>
+        <span class="position-absolute start-0 translate-middle badge rounded-pill bg-secondary">1</span>
+    </a>
+</div>
+<!-- end cart btn -->
+            <!-- footer -->
+            <footer class="footer-sec pt-3 pb-0" id="footer">
+                <div class="main d-flex flex-row flex-wrap">
+                    <div class="link col-12 col-md-4 col-lg-3">
+                        <div class="footer-header">
+                            <h5>لینک های مفید</h5>
+                        </div>
+                        <ul class="link-des">
+                            <li>
+                                <a href="#" class="footer-links">خانه</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-links"> کتاب ها</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-links">دسته بندی</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-links">مجموعه ها</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-links">تماس باما</a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="booklist col-12 col-md-4 col-lg-3 ">
+                        <div class="footer-header">
+                            <h5>دسته بندی کتاب ها </h5>
+                        </div>
+                        <div class="booklist-des ps-4">
+                            <div class="sidebar-list-books">
+                                <div class="row">
+                                    <ul class="">
+                                        <li>
+                                            <a class="" href="#">ماجراجویی</a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="./groupingPage.html">رمان</a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="#">کمدی</a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="#">فانتزی</a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="#">تاریخی</a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="#">کمدی</a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="#">فانتزی</a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="#">تاریخی</a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="#">جنایی</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newsletter col-12 col-md-4 col-lg-3">
+                        <div class="footer-header">
+                            <h5>عضویت در خبرنامه</h5>
+                        </div>
+                        <div class="newsletter-des">
+                            <!-- subs newsletter-->
+                            <div class="sendemail-box row justify-content-between rounded-pill">
+                                <input class="sendemail-txt col-9" type="email" placeholder="ایمیل خود را وارد کنید">
+                                <a class=" sendemail-btn rounded-pill col-3 text-center" href="#">
+                                    ارسال
+                                </a>
+                            </div>
+                            <!-- end subs newsletter-->
+
+                            <a href="#">extrabook@gmail.com</a>
+
+                            <p class="num">+91-9976893859</p>
+                            <div class="icons d-flex flex-wrap">
+                                <a href="#" title="twitter"><i class="social-icon icon-twitter"></i></a>
+                                <a href="#" title="skype"><i class="social-icon icon-skype"></i></a>
+                                <a href="#" title="facebook"><i class="social-icon  icon-facebook-circled"></i></a>
+                                <a href="#" title="nstagram"><i class="social-icon icon-instagram"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="logo p-4">
+                    <div class="logo-des row align-items-center">
+                        <div class="col-12 col-md-8 d-flex flex-column align-items-center mh-100">
+                            <div class="">
+                                <p class="">
+                                    اکسترا می‌کوشد با گستره‌ای از کتاب‌ها و مجلات متنوع برای طیف وسیعی از کاربران تجربه
+                                    فوق‌العاده خریدکتاب و خواندن آن در دستگاه‌های هوشمند را فراهم کند.
+                                    اکسترا می‌کوشد با گستره‌ای از کتاب‌ها و مجلات متنوع برای طیف وسیعی از کاربران تجربه
+                                    فوق‌العاده خریدکتاب و خواندن آن در دستگاه‌های هوشمند را فراهم کند.
+                                </p>
+                            </div>
+                            <div class="p-3">
+                                <a href="./aboutusPage.html" class="btn-know">اطلاعات بیشتر</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 my-0 mx-auto">
+                            <img src="./assets/img/logo-book-shop.png" alt="logo" class="my-0 mx-auto">
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <hr>
+                    <p class="mb-0">© Copyright 2022 Manik Maity.</p>
+                </div>
+            </footer>
+            <!-- end footer -->
+
+        </div>
+
+        <!-- mobile fixed nav -->
+        <div class="position-fixed bottom-0 mobile-fixed-nav bg-dark p-3 w-100 d-block d-md-none">
+            <div class="row justify-content-around">
+                <a href="./contactusPage.html" class="d-flex flex-column col-3 contactUs">
+                    <i class="icon-mail"></i>
+                    <span>
+                        ارتباط با ما
+                    </span>
+                </a>
+                <a href="#footer" class="d-flex flex-column col-3 call">
+                    <i class="icon-phone"></i>
+                    <span>
+                        تماس
+                    </span>
+                </a>
+                <a href="./aboutusPage.html" class="d-flex flex-column col-3 aboutUs">
+                    <i class="icon-doc-text"></i>
+                    <span>
+                        درباره ما
+                    </span>
+                </a>
+                <a href="./index.html" class="d-flex flex-column col-3 mainPage">
+                    <i class="icon-home"></i>
+                    <span>
+                        صفحه اصلی
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!-- end mobile fixed nav -->
+    </div>
+
+    <!-- jquery -->
+    <script src="./assets/js/jquery-3.6.1.min.js"></script>
+    <!-- aos animation js -->
+    <script src="./assets/aos-master/dist/aos.js"></script>
+    <!-- wow animation -->
+    <script src="./assets/matthieua-WOW-07a2b50/dist/wow.min.js">
+        new WOW().init();
+    </script>
+    <!-- bootstrap js -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- swiper -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- script js -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

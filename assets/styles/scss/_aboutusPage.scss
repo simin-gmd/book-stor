@@ -1,0 +1,165 @@
+.aboutus-page {
+    .aboutus-des {
+        .title {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .aboutus-des-content {
+            @include textStyle($mainBlack, 1rem, 2rem, 2rem)
+        }
+
+        .options {
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    margin: 20px 4px;
+display: flex;
+align-items: center;
+justify-content: end;
+                    i {
+                        font-size: 18px;
+                        background: $mainPrimary;
+                        font-weight: 0.8rem;
+                        color: $mainWhite;
+                        margin: 0px 5px;
+                        border-radius: 50%;
+                        padding: 7px 7px 4px 5px;
+                        transition: all 0.3s ease-in-out;
+                        border: 1px solid $mainPrimary;
+                    }
+
+                    span {
+                        white-space: wrap;
+                        width: auto;
+                    }
+
+                    &:hover i {
+                        border: none;
+                        background-color: $mainBlack;
+                    }
+                }
+            }
+        }
+    }
+
+    .bestauthor {
+        background-color: $bgColor;
+        direction: rtl;
+
+        .main-title {
+            .br {
+                &::after {
+                    position: relative;
+                    display: block;
+                    justify-content: center;
+                    content: " ";
+                    background-color: $lightGray;
+                    width: 40%;
+                    height: 2px;
+                    margin: 0 auto;
+                    top: 15px;
+                    z-index: 0;
+                }
+            }
+
+            >span {
+                position: relative;
+                left: -2px;
+                color: $bgColor;
+                background-color: $bgColor;
+            }
+
+            .main-title-group {
+                text-decoration: none !important;
+                color: $mainWhite;
+                background-color: $mainPrimary;
+                padding: 10px;
+                margin: 0;
+                z-index: 1;
+                position: relative;
+            }
+
+            .main-title-name {
+                @include textStyle($mainBlack, 2rem, bold, 3rem);
+            }
+        }
+
+        .author-slide {
+            overflow: hidden;
+
+            .author-elm {
+                overflow: hidden;
+                
+                a {
+                    background-color: $mainPrimary;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 5%;
+                    &:hover {
+                        img {
+                            transform: scale(1.1);
+                            opacity: 0.8;
+                    border-radius: 5%;
+                    overflow: hidden;
+
+                            
+                        }
+                        .author-social{
+                            opacity: 1;
+                        }
+                    }
+
+                    .author-social {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        font-size: 1.1rem;
+                        transform: translate(-50%, -50%);
+                        
+                        opacity: 0;
+                        transition: all .5s ease-in-out;
+                        z-index: 222;
+                       
+
+                        i {
+                            text-decoration: none !important;
+                            color: $mainWhite;
+                            background-color: $mainPrimary;
+                            padding: 10px;
+                            transition: all .3s linear;
+                            border-radius: 50%;
+                            margin: 0px 4px;
+
+                            &:hover {
+                                background-color: $mainBlack;
+                            }
+                        }
+                    }
+                }
+
+                img {
+                    transition: all .5s ease-in-out;
+                    border-radius: 5%;
+                    overflow: hidden;
+
+                }
+            }
+        }
+
+        .see-all-book {
+            text-decoration: none !important;
+            color: $mainWhite;
+            background-color: $mainPrimary;
+            padding: 10px;
+            transition: all .3s linear;
+
+            &:hover {
+                background-color: $mainBlack;
+            }
+        }
+    }
+
+}

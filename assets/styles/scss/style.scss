@@ -1,0 +1,102 @@
+@import './colors';
+@import './mixins';
+@import './borders';
+@import './spinner';
+@import './responsive';
+@import './fonts';
+@import './header';
+@import './lgNavbar';
+@import './grouping';
+@import './bestSelling';
+@import './footer';
+@import './groupingPage';
+@import './bookPage';
+@import './aboutusPage';
+@import './contactusPage';
+@import './login';
+@import './mobileNav';
+@import './cartPage.scss';
+@import './blog';
+
+body {
+    font-family: 'iransans';
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row-body {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.go-top-btn {
+    border: none;
+    border-radius: 50%;
+    background-color: $mainPrimary;
+    padding: 14px 6px;
+    margin: 15px;
+    float: right;
+    position: sticky;
+    bottom: 17px;
+    z-index: 130;
+    box-shadow: 0px 0px 4px $mainBlack;
+    transition: all .3s linear;
+    &:hover {
+        background-color: $mainBlack;
+    }
+
+    span {
+        @include textStyle($mainWhite, 1rem, 1rem, 1rem);
+        padding: 20px 10px;
+    }
+}
+.fixed-bottom{
+    z-index: 111;
+// right: 100px;
+    .shopping-bag-fixed{
+        border: none;
+        border-radius: 50%;
+        background-color: $mainPrimary;
+        padding: 15px;
+        margin: 10px;
+        color: $mainWhite;
+        float: left;
+        left: 0%;
+        bottom: 10px;
+        z-index: 111;
+        box-shadow: 0px 0px 4px $mainBlack;
+        transition: all .3s linear;
+        &:hover {
+            background-color: $mainBlack;
+        color: $mainWhite;
+    
+        }
+    }
+}
+@include media(XXS){
+    .shopping-bag-fixed{
+        bottom: 85px !important;
+    }
+    .go-top-btn{
+        bottom: 94px;
+    }
+}
+@include media(XS){
+    .shopping-bag-fixed{
+        bottom: 85px !important;
+    }
+    .go-top-btn{
+        bottom: 94px;
+    }
+}
+@include media(SM){
+    .shopping-bag-fixed{
+    bottom: 85px !important;
+    }
+    .go-top-btn{
+        bottom: 94px;
+    }
+}

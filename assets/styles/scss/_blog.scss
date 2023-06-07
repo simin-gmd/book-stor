@@ -1,0 +1,110 @@
+.blog {
+    // background-image: url(../../img/blog/office.jpg);
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+height: fit-content;
+    &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: #d2d3db;
+        opacity: .8;
+    }
+
+    .blog__card {
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+
+        .blog-download-item {
+            text-align: center;
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+            cursor: pointer;
+
+            img {
+                border-radius: 9px;
+                transition: all ease-in-out .3s;
+                max-width: 100%;
+                vertical-align: middle;
+            }
+
+            .name {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 1.2rem;
+
+                h2 {
+                    
+                    font-size: 20px;
+                    color: black;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    transition: all .3s ease;
+                }
+
+                p {
+                    font-size: 12px;
+                    color: #555555;
+                    line-height: 26px;
+                    text-align: justify;
+                    direction: rtl;
+                }
+            }
+
+            .btn {
+                // display: flex;
+                width: 100%;
+                align-items: center;
+                padding: 6;
+                gap: 10px;
+                margin-top: 0.3rem;
+                border: none;
+
+                &:hover {
+                    border: none;
+                }
+
+                .btn-1 {
+                    width: 100%;
+                    border-radius: 5px;
+                    font-size: 15px;
+                    background: #758bfd;
+                    box-shadow: none;
+                    border: none;
+                    text-align: center;
+                    border: 2px solid #758bfd;
+                    transition: all .2s;
+color: #fff;
+                    &:hover {
+                        color: #758bfd;
+                        background: #f7f7f7;
+                        border: 2px solid #758bfd;
+                    }
+                }
+
+                .a {
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,288 @@
+.header {
+    background-color: $bgColor;
+    @include mainBorder;
+    margin: 0px;
+    padding: 0px;
+    white-space: nowrap;
+    position: relative;
+    width: auto;
+    overflow: inherit;
+}
+
+.img-shape::after {
+    content: "";
+    top: 150px;
+    left: 80px;
+    bottom: 0;
+    right: 0px;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: $mainPrimary;
+    outline: 0.5rem solid var(--mainWhite);
+    z-index: -1;
+    border-radius: 80px;
+    transform: rotate(-20deg);
+    // overflow: hidden;
+}
+
+.header-content-main {
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .title {
+        @include textStyle($mainBlack, 3rem, bold, 4rem);
+
+        .mainPrimary {
+            color: $mainPrimary;
+        }
+    }
+
+    .description {
+        @include textStyle($textColor, 18px, 1rem, 2rem);
+        // white-space: pre-wrap;
+        //  
+    p{
+        // text-align: justify !important;
+        text-justify: inter-word !important;
+    }
+    }
+
+    .search-box {
+        background: $mainWhite;
+        margin: 0 auto;
+        direction: rtl;
+        box-shadow: 0px 4px 4px rgba($color: $mainBlack, $alpha: 0.1);
+        width: 80%;
+
+        .search-txt {
+            border: none;
+            background: none;
+            outline: none;
+            text-align: start;
+        }
+
+        .search-btn {
+            text-decoration: none !important;
+            color: $mainWhite;
+            background-color: $mainPrimary;
+            padding: 10px;
+            transition: all .3s linear;
+
+            &:hover {
+                background-color: $mainBlack;
+            }
+        }
+    }
+}
+
+@include media(XXS) {
+    .header-content-main {
+        img {
+            width: 100%;
+            height: 50%;
+            top: 50%;
+            position: relative;
+
+        }
+
+        .img-shape::after {
+            content: "";
+            top: 300px;
+            left: 50px;
+            bottom: 0;
+            right: 0px;
+            position: absolute;
+            width: 80%;
+            height: 60%;
+            background-color: $mainPrimary;
+            outline: 0.5rem solid var(--mainWhite);
+            z-index: -1;
+            border-radius: 40px;
+            transform: rotate(-25deg);
+            overflow: hidden;
+        }
+    }
+}
+
+@include media(XS) {
+    .header-content-main {
+        img {
+            width: 118%;
+            height: 88%;
+            top: 13%;
+            position: relative;
+            left: -9%;
+
+        }
+
+        .img-shape::after {
+            content: "";
+            top: 105px;
+            left: 19px;
+            bottom: 0;
+            right: 0px;
+            position: absolute;
+            width: 80%;
+            height: 77%;
+            background-color: $mainPrimary;
+            outline: 0.5rem solid var(--mainWhite);
+            z-index: -1;
+            border-radius: 24px;
+            transform: rotate(-25deg);
+            overflow: hidden;
+        }
+
+        .header-right-content {
+            padding: 0px 50px;
+
+            .title {
+                @include textStyle($mainBlack, 1rem, bold, 1.2rem);
+                padding: 1rem 20px;
+            }
+
+            .description {
+                @include textStyle($textColor, 10px, .1rem, .8rem);
+                padding: 1rem 20px;
+                // overflow: hidden;
+                white-space: pre-wrap;
+            
+    // color: blue !important;
+            }
+
+            .search-box {
+                width: 100%;
+
+                .search-btn {
+
+                    overflow: hidden;
+                    width: 25%;
+                    padding: 10px 0;
+                    @include textStyle($mainWhite , .5rem, normal, 1rem)
+                }
+
+                .search-txt {
+                    &::placeholder {
+                        font-size: .7rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media(SM) {
+    .header-content-main {
+        img {
+            width: 100%;
+            height: 83%;
+            top: 18%;
+            position: relative;
+
+        }
+
+        .img-shape::after {
+            content: "";
+            top: 199px;
+            left: 40px;
+            bottom: 0;
+            right: 0px;
+            position: absolute;
+            width: 88%;
+            height: 70%;
+            background-color: $mainPrimary;
+            outline: 0.5rem solid var(--mainWhite);
+            z-index: -1;
+            border-radius: 40px;
+            transform: rotate(-25deg);
+            overflow: hidden;
+        }
+
+        .header-right-content {
+            padding: 0px 50px;
+
+            .title {
+                @include textStyle($mainBlack, 2rem, bold, 3rem);
+                padding: 1rem 2rem;
+            }
+
+            .description {
+                @include textStyle($textColor, 14px, .1rem, 1.7rem);
+                padding: 1rem 20px;
+                overflow: hidden;
+                white-space: pre-wrap;
+            }
+
+            .search-box {
+                width: 70%;
+
+                .search-btn {
+                    overflow: hidden;
+                    width: 25%;
+                    padding: 10px 0;
+                    @include textStyle($mainWhite , .7rem, normal, 1rem)
+                }
+            }
+        }
+    }
+}
+
+@include media(MD) {
+    .header-content-main {
+        img {
+            width: 99%;
+            height: 90%;
+            top: 10%;
+            position: relative;
+
+        }
+
+        .img-shape::after {
+            content: "";
+            top: 175px;
+            left: 50px;
+            bottom: 0;
+            right: 0px;
+            position: absolute;
+            width: 83%;
+            height: 77%;
+            background-color: $mainPrimary;
+            outline: 0.5rem solid var(--mainWhite);
+            z-index: -1;
+            border-radius: 40px;
+            transform: rotate(-25deg);
+            overflow: hidden;
+        }
+
+        .header-right-content {
+            padding: 0px 50px;
+
+            .title {
+                @include textStyle($mainBlack, 2rem, bold, 3rem);
+                padding: 1rem 2rem;
+            }
+
+            .description {
+                @include textStyle($textColor, 14px, .1rem, 1.7rem);
+                padding: 1rem 20px;
+                overflow: hidden;
+                white-space: pre-wrap;
+            }
+
+            .search-box {
+                width: 70%;
+
+                .search-btn {
+                    overflow: hidden;
+                    width: 25%;
+                    padding: 10px 0;
+                    @include textStyle($mainWhite , .7rem, normal, 1rem)
+                }
+            }
+        }
+    }
+}

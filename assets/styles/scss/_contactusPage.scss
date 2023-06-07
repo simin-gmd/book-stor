@@ -1,0 +1,118 @@
+.contactus {
+    .contact-tools {
+        .contact-tool {
+            a {
+                position: relative;
+                box-shadow: 0px 4px 4px rgba($color: $mainBlack, $alpha: 0.1);
+                border-radius: 10px;
+                color: $mainPrimary;
+                background-color: $bgColor;
+                transition: all .5s ease-in-out;
+                z-index: 1;
+                overflow: hidden;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: -55px;
+                    width: 95px;
+                    height: 95px;
+                    bottom: -50px;
+                    border-radius: 35px;
+                    background-color: $mainPrimary;
+                    -webkit-transition: all .3s;
+                    transition: all .3s;
+                    z-index: -1;
+                }
+
+                &:hover {
+                    color: $mainWhite ;
+                    top: -4px;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 0;
+                        background-color: $mainPrimary;
+                        z-index: -1;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .map {
+        position: relative;
+        // top: 50px;
+        // right: -53px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        // background: $lightGray;
+        // padding: 10px;
+        // border-radius: 18px;
+        // box-shadow: 0px 4px 14px rgba($color: $mainPrimary, $alpha: 1);
+
+        img {
+            box-shadow: 0px 4px 14px rgba($color: $mainPrimary, $alpha: 1);
+            border-radius: 30px;
+        }
+
+        // direction: rtl;
+        // background-color: $bgColor;
+        // height: 100%;
+
+    }
+
+    .contactUs-content {
+        border-radius: 30px;
+        background-color: $mainPrimary;
+        box-shadow: 0px 4px 14px rgba($color: $mainPrimary, $alpha: 1);
+
+
+        .cantactus-form {
+            direction: rtl;
+
+            .title {
+                @include textStyle($mainWhite, 2rem, 2rem, 2rem);
+            }
+
+            .form-contact {
+                form {
+                    div {
+
+                        .form-control,
+                        .form-select {
+                            outline: none;
+                            border-radius: 18px;
+                            background: white;
+
+                        }
+                    }
+
+                    .form-control-btn {
+                        text-decoration: none !important;
+                        color: $mainWhite;
+                        background-color: $mainBlack;
+                        border-radius: 25px;
+                        padding: 8px 18px;
+                        transition: all .3s linear;
+                        border: 1px solid $mainBlack;
+
+                        &:hover {
+                            background-color: $mainWhite;
+                            color: $mainPrimary;
+                            border: 1px solid $mainPrimary;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

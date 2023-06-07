@@ -1,0 +1,97 @@
+.cart-page {
+    table {
+        border-radius: 20px;
+
+        tbody {
+            tr {
+
+                .quantity {
+
+                    input {
+
+                        width: 25%;
+                        border-radius: 0px;
+                        text-align: center;
+                        border: none;
+                        background: $bgColor;
+
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+
+                    .quantity-down,
+                    .quantity-up {
+                        margin: 0 0px;
+                        padding: 10px 17px;
+                        background-color: $bgColor;
+                        transition: all .3s linear;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        // border: 1px solid $mainPrimary;
+
+                        &:hover {
+                            background-color: $mainPrimary;
+                            color: $mainWhite;
+                        }
+                    }
+
+                    .quantity-down {
+                        border-radius: 25px 0px 0px 25px;
+                    }
+
+                    .quantity-up {
+                        border-radius: 0px 25px 25px 0px;
+
+                    }
+                }
+
+                .remove {
+                    @include textStyle(red, 1.5rem, 1rem, 1rem);
+
+                    &:hover {
+                        @include textStyle(red, 2rem, 1rem, 1rem);
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    .coupon-sec {
+
+        .coupon-btn,
+        .go-buy {
+            text-decoration: none !important;
+            color: $mainWhite;
+            background-color: $mainPrimary;
+            padding: 10px;
+            transition: all .3s linear;
+            border: none;
+
+            &:hover {
+                background-color: $mainBlack;
+            }
+        }
+
+        input {
+            border-radius: 22px;
+            border: 1px solid gray;
+            padding: 10px;
+
+        }
+    }
+    .go-buy {
+        text-decoration: none !important;
+        color: $mainWhite;
+        background-color: $mainPrimary;
+        padding: 10px;
+        transition: all .3s linear;
+        border: none;
+
+        &:hover {
+            background-color: $mainBlack;
+        }
+    }
+}
